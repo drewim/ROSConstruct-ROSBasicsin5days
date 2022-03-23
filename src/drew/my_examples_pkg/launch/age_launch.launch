@@ -1,0 +1,5 @@
+<launch>
+    <!-- My Examples Package launch file -->
+    <node pkg="my_examples_pkg" type="age_publisher.py" name="age_publisher"  output="screen">
+    </node>
+</launch>

@@ -1,0 +1,6 @@
+<launch>
+    <!-- My topics quiz publisher for writing to /cmd_vel -->
+    <node pkg="topics_quiz" type="topics_node_pub.py" name="topics_quiz_node"  output="screen">
+    
+    </node>
+</launch>
