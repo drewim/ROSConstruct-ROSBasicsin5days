@@ -1,0 +1,11 @@
+USER        PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+user          1  0.4  0.0   3980  2928 ?        Ss   21:13   0:00 /bin/bash -c sudo ln -sfv /opt/ros/noetic /opt/ros/latest; sleep infinity
+user          9  0.0  0.0   2512   584 ?        S    21:13   0:00 sleep infinity
+user        202  0.6  0.0   5816  4940 pts/1    Ss+  21:13   0:00 /bin/bash -c source /home/user/.bashrc;  export ROS_PACKAGE_PATH=/home/user/quiz_ws:$ROS_PACKAGE_PATH;  export ROS_HOSTNAME=5_quiz_correction;  export ROS_MASTER_URI=http://5_simulation:11311;  export DOCKER_HOST_IP_ADDRESS=172.31.41.219;  export SLOT_PREFIX=7a7423bf-0cf0-4770-b96c-9b16d950e8b1;  roslaunch tests_quizes services_quiz.launch --screen gui:=false  
+user        272  0.8  0.0 255144 29620 pts/1    Sl+  21:13   0:00 /usr/bin/python3 /opt/ros/noetic/bin/roslaunch tests_quizes services_quiz.launch --screen gui:=false
+user        280  0.1  0.0   5972  5244 ?        Ss   21:13   0:00 bash /home/user/quiz_ws/Quizes/tests_quizes/scripts/services_quiz.sh __name:=services_quiz_node __log:=/home/user/.ros/log/f34216a8-aaea-11ec-962b-0242c0a81008/services_quiz_node-1.log
+user        746  1.4  0.0 254888 29248 ?        Sl   21:14   0:00 /usr/bin/python3 /opt/ros/noetic/bin/roslaunch services_quiz start_bb8_move_custom_service_server.launch
+user        755 10.3  0.0 547656 26788 ?        Ssl  21:14   0:04 python /home/user/catkin_ws/src/drew/services_quiz/scripts/bb8_move_custom_service_server.py __name:=service_server __log:=/home/user/.ros/log/f34216a8-aaea-11ec-962b-0242c0a81008/service_server-1.log
+user        766  2.0  0.0 254884 29292 ?        Sl   21:14   0:00 /usr/bin/python3 /opt/ros/noetic/bin/roslaunch services_quiz call_bb8_move_in_square_custom_service_server.launch
+user        775 10.3  0.0 399804 26352 ?        Ssl  21:14   0:03 python /home/user/catkin_ws/src/drew/services_quiz/scripts/bb8_move_custom_service_client.py __name:=service_client __log:=/home/user/.ros/log/f34216a8-aaea-11ec-962b-0242c0a81008/service_client-1.log
+user        786  0.0  0.0   5904  2848 ?        R    21:15   0:00 ps aux
